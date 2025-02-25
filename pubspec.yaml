@@ -1,0 +1,35 @@
+name: myapp
+description: "A new Flutter project."
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.6.1
+
+dependencies:
+  show_hide_password: ^0.0.2
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  flutter_native_splash: ^2.4.4 # Splash screen package
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - lib/assets/logo.png
+    - lib/assets/icons/
+
+flutter_native_splash:
+  color: "#ffffff" # Background color
+  image: assets/logo.png # Ensure this image exists!
+  android_12:
+    color: "#ffffff"
+    image: assets/logo.png
