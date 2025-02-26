@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:myapp/screens/Frist_screen.dart';
 import 'dart:async';
 import 'home_screen.dart';
 
@@ -28,9 +29,9 @@ class _SplashScreenState extends State<SplashScreen>
     );
 
     Future.delayed(Duration(seconds: 3), () {
-      Navigator.pushReplacement(
+      Navigator.pushReplacementNamed(
         context,
-        MaterialPageRoute(builder: (context) => HomeScreen()),
+        FristScreen.id,
       );
     });
   }

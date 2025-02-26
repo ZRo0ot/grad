@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 
 // ignore: must_be_immutable
 class CustomButton extends StatelessWidget {
-  CustomButton({required this.text});
+  CustomButton({required this.text,required this.Fontsize});
   String text;
-
+   double? Fontsize;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -17,7 +17,7 @@ class CustomButton extends StatelessWidget {
         child:
         Center(child: Text(text,style: TextStyle(
           color: Colors.white,
-          fontSize: 24,
+          fontSize:Fontsize,
 
         ),),),
     );

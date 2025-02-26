@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:myapp/screens/Frist_screen.dart';
 import 'package:myapp/screens/Login_screen.dart';
 import 'package:myapp/screens/Register_screen.dart';
 import 'package:myapp/screens/Splash_screen.dart';
@@ -19,9 +20,11 @@ class DevGuideApp extends StatelessWidget {
         LoginPage.id : (context) => LoginPage(),
         RegisterPage.id : (context) => RegisterPage(),
         SplashScreen.id :(context) => SplashScreen(),
+        FristScreen.id : (context) => FristScreen(),
       },
       initialRoute:
       SplashScreen.id,
+
     );
   }
 }

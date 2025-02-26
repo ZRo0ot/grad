@@ -56,7 +56,7 @@ class LoginPage extends StatelessWidget {
            SizedBox(
              height: 5,
            ),
-           CustomButton(text: 'Sign in'),
+           CustomButton(text: 'Sign in',Fontsize: 24),
            SizedBox(
              height: 15,
            ),
